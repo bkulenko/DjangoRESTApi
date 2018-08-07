@@ -35,6 +35,6 @@ The API contains all the source files necessary for running the application, asi
 ## Tests
 
 The API includes basic tests of its funcionality, meant to run on an empty database. The test script seeds the database with a test movie and comment objects. It then saves another movie entity to the database, tries to do it again to check if the API allows for storing multiple copies of the same entity (which it doesn't),
-fetches all the movie objects, fetches all comments, fetches movies related to a speciffic movie (one seeded with test_base_seed method) and posts another comment.
+fetches all the movie objects, fetches all comments, fetches movies related to a speciffic movie (one seeded with `test_base_seed` method) and posts another comment.
 
 The test script logs all test results to `testlog.txt` file in the `rest` folder.
