@@ -3,12 +3,12 @@
 ## Description
 ### /movies/ endpoint
 A Django REST API that fetches all data related to a movie from OMDBAPI with a POST request with payload conforming to following pattern:
-```{"name": "Movie Name"}```
+     ```{"name": "Movie Name"}```
 It fetches a JSON object from OMDBAPI which then gets deserialised and saved into default Django SQLite database, each JSON key into its own field.
 
 With a GET request it fetches data about all the movies present in the database and serialises it back into a JSON object.
 Data fetched from the database can be sorted by any key present in the model, if additional `sortarg` parameter is provided in following URL pattern:
-    /movies/sort=sortarg
+    ```/movies/sort=sortarg```
 
 ### /comments/ endpoint
 
