@@ -47,11 +47,3 @@ def comment_controller(req, **movieid):
             comments = Comment.objects.all()
         serializer = CommentSerializer(comments, many=True)
         return JsonResponse(serializer.data, safe=False)
-
-
-'''@csrf_exempt
-def comment_detail(req, movieid):
-    if req.method == 'GET':
-        comments = Comment.objects.filter(Movie=movieid)
-        serializer = CommentSerializer(comments, many=True)
-        return JsonResponse(serializer.data, safe=False)'''
