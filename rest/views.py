@@ -20,7 +20,6 @@ def movie_controller(req, **sortarg):
     if req.method == "POST":
         reqbody = json.loads(req.body.decode('utf-8'))
         response = (requests.get('http://omdbapi.com/?t={}&apikey={}'.format(reqbody['name'], settings.OMDBKEY))).json()
-        print(type(response))
         serializer = MovieSerializer(data=response)
         if serializer.is_valid() and Movie.objects.filter(imdbID=response['imdbID']).count()==0:
 
