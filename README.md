@@ -44,3 +44,8 @@ The API includes basic tests of its funcionality, meant to run on an empty datab
 fetches all the movie objects, fetches all comments, fetches movies related to a speciffic movie (one seeded with `test_base_seed` method) and posts another comment.
 
 The test script logs all test results to `testlog.txt` file in the `rest` folder.
+
+
+## Django REST Framework
+
+DRF was chosen for this project because of its built-in serialiser classes, which allow for quick and easy data manipulation without much additional code.
