@@ -17,7 +17,7 @@ The API can also save a comment about the movie to, if POST request contains a p
 The comment gets saved only if the database already stores the movie entity with IMDB id provided in request payload. Comment and movie models are not linked by foreign key.
 
 Comments can also be filtered if additional movieid parameter is provided in the URL, conforming to following pattern:
-    /comments/movieid
+    ```/comments/movieid```
 
 ## Requirements
 Main requirement of this API is Django REST Framework in version 3.8.2 and Django in version 2.1. Aside from Django REST Framework, the app does not use any other modules not already required by Django and DRF that are not already present in Python standard library.
