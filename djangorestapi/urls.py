@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('movies/', rest.views.movie_controller),
     path('comments/', rest.views.comment_controller),
-    path('comments/<str:movieid>', rest.views.comment_detail)
+    path('comments/<str:movieid>', rest.views.comment_controller),
+    path('movies/sort=<str:sortarg>', rest.views.movie_controller)
 ]
