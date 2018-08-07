@@ -32,7 +32,7 @@ Additional requirements are specified in `requirements.txt` file.
 
 ## Settings
 
-The API uses default Django settings, apart from additional OMDBKEY parameter.
+The API uses default Django settings, apart from additional `OMDBKEY` parameter.
 
 ## Setup
 
