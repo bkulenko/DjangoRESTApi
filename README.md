@@ -3,7 +3,7 @@
 ## Description
 ### /movies/ endpoint
 A Django REST API that fetches all data related to a movie from OMDBAPI with a POST request with payload conforming to following pattern:
-    {"name": "Movie Name"}
+```{"name": "Movie Name"}```
 It fetches a JSON object from OMDBAPI which then gets deserialised and saved into default Django SQLite database, each JSON key into its own field.
 
 With a GET request it fetches data about all the movies present in the database and serialises it back into a JSON object.
@@ -13,7 +13,7 @@ Data fetched from the database can be sorted by any key present in the model, if
 ### /comments/ endpoint
 
 The API can also save a comment about the movie to, if POST request contains a payload conforming to the following pattern:
-    {"Movie": "IMDB movie id", "Comment": "Comment contents"}
+    ````{"Movie": "IMDB movie id", "Comment": "Comment contents"}````
 The comment gets saved only if the database already stores the movie entity with IMDB id provided in request payload. Comment and movie models are not linked by foreign key.
 
 Comments can also be filtered if additional movieid parameter is provided in the URL, conforming to following pattern:
